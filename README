@@ -1,0 +1,9 @@
+LATCO
+
+latco is the guts of an old program, lattice, repackaged as a shared
+library to make it easier to access the functions in that program.
+
+INSTALL
+
+Run 'make' and then 'make install' as root. If you like, you can change
+the DESTDIR variable in the makefile first.
