@@ -10,7 +10,7 @@ all:
 install:
 	mkdir -p $(DESTDIR)$(libdir)
 	install liblatco.so.0.0 $(DESTDIR)$(libdir)/liblatco.so.0.0
-	ln -s $(DESTDIR)$(libdir)/liblatco.so.0.0 $(DESTDIR)$(libdir)/liblatco.so.0
-	ln -s $(DESTDIR)$(libdir)/liblatco.so.0 $(DESTDIR)$(libdir)/liblatco.so
+	ln -s -r $(DESTDIR)$(libdir)/liblatco.so.0.0 liblatco.so.0
+	ln -s -r $(DESTDIR)$(libdir)/liblatco.so.0 liblatco.so
 	mkdir -p $(DESTDIR)$(includedir)
 	install latco.h $(DESTDIR)$(includedir)/latco.h
